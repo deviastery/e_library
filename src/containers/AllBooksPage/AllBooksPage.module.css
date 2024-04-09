@@ -1,0 +1,70 @@
+.wrapper{
+
+}
+
+.container__books{
+}
+
+.ul__books{
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 50%;
+}
+.container__book{
+    background-color: #dee9eb;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+.book{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    display: flex;
+}
+.book__title{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 0;
+}
+.book__body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.book__img{
+    width: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+.books__button {
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container__button{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .ul__books {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .ul__books {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .ul__books {
+        width: 100%;
+    }
+}
