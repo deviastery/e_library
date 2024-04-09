@@ -53,6 +53,46 @@
     padding-bottom: 10px;
 }
 
+
+.wrapper__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__input {
+    position: relative;
+    display: inline-flex;
+    margin: auto;
+    
+}
+.input {
+    min-width: 300px;
+    padding: 10px 15px;
+    padding-right: 0;
+    border: 3px solid;
+    border-radius: 3px;
+    font-size: 17px;
+    outline: none;
+}
+
+.clear {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 35px;
+    height: 30px;
+    padding: 5px;
+    object-fit: contain;
+    object-position: center center;
+    transform: .5s;
+    opacity: .6;
+    cursor: pointer;
+}
+.clear__disabled {
+    opacity: .3;
+}
+
 @media screen and (max-width: 1400px) {
     .ul__books {
         width: 60%;

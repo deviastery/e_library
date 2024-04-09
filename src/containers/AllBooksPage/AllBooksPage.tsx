@@ -47,23 +47,25 @@ const AllPostsPage: React.FC = () => {
     return (
 
         <>
-
             <div className={styles.wrapper__input}>
-                <input 
-                    type="text" 
-                    value={inputSearchValue}
-                    onChange={(e) => handleInputChange(e.target.value)}
-                    placeholder="Введите название книги"
-                    className={styles.input}
-                />
-                <img 
-                    onClick={() => inputSearchValue && handleInputChange('')}
-                    src={icon} 
-                    className={cn(styles.clear, !inputSearchValue && styles.clear__disabled)}
-                    alt="Clear" 
-                />
+                <div className={styles.container__input}>
+                    <input 
+                        type="text" 
+                        value={inputSearchValue}
+                        onChange={(e) => handleInputChange(e.target.value)}
+                        placeholder="Введите название книги"
+                        className={styles.input}
+                    />
+                    <img 
+                        onClick={() => inputSearchValue && handleInputChange('')}
+                        src={icon} 
+                        className={cn(styles.clear, !inputSearchValue && styles.clear__disabled)}
+                        alt="Clear" 
+                    />
+                </div>
             </div>
         
+
             <div className={styles.wrapper}> 
                 <div className={styles.container__books}>
                     <ul className={styles.ul__books}>
