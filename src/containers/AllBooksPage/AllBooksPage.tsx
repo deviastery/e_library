@@ -77,9 +77,9 @@ const AllPostsPage: React.FC = () => {
                                         <img src={book.imgPath} alt={book.title} className={styles.book__img}/>
                                     </div>
 
-                                    <div>
+                                    <div className={styles.book__body}>
                                         <h3 className={styles.book__title}>{book.title}</h3>
-                                        <p className={styles.book__body}>{book.description}</p>
+                                        <p className={styles.book__description}>{book.description}</p>
                                     </div>
 
                                 </Link>

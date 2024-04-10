@@ -12,10 +12,10 @@
     width: 50%;
 }
 .container__book{
-    background-color: #dee9eb;
+    background-color: rgba(237, 209, 158, 0.8);
     padding: 10px 15px;
     margin: 10px;
-    border-radius: 2px;
+    border-radius: 7px;
 }
 .book{
     text-decoration: none;
@@ -23,6 +23,7 @@
     padding: 0;
     color: #000;
     display: flex;
+    align-items: center;
 }
 .book__title{
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -30,13 +31,16 @@
     margin: 5px 0;
     padding: 0;
 }
-.book__body{
+.book__description{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
+.book__body{
+    margin: 10px;
+}
 .book__img{
-    width: 150px;
+    width: 125px;
     object-fit: cover;
     object-position: center center;
 }
@@ -55,6 +59,7 @@
 
 
 .wrapper__input{
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,22 +69,25 @@
     position: relative;
     display: inline-flex;
     margin: auto;
+    width: 50%;
     
 }
 .input {
-    min-width: 300px;
+    width: 100%;
     padding: 10px 15px;
     padding-right: 0;
     border: 3px solid;
     border-radius: 3px;
     font-size: 17px;
     outline: none;
+    margin: 10px;
+    background-color: rgb(255, 244, 225);
 }
 
 .clear {
     position: absolute;
-    top: 3px;
-    right: 3px;
+    top: 12px;
+    right: 10px;
     width: 35px;
     height: 30px;
     padding: 5px;
@@ -97,14 +105,24 @@
     .ul__books {
         width: 60%;
     }
+    .container__input {
+        width: 60%;
+    }
+
 }
 @media screen and (max-width: 1200px) {
     .ul__books {
         width: 80%;
     }
+    .container__input {
+        width: 80%;
+    }
 }
 @media screen and (max-width: 750px) {
     .ul__books {
+        width: 100%;
+    }
+    .container__input {
         width: 100%;
     }
 }
