@@ -1,5 +1,6 @@
 {
   "name": "e_library",
+  "homepage": "https://deviastery.github.io/e_library/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

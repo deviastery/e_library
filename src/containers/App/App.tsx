@@ -7,16 +7,20 @@ const App: React.FC = () => {
     
     return (
         <>
-            <Routes>
-                    <Route 
-                        path="/"
-                        element={<AllBooksPage />}
-                    />
-                    <Route 
-                        path="/:id"
-                        element={<SingleBookPage />}
-                    />
-            </Routes>
+            <BrowserRouter basename={`/e_library/`}>
+                <div>
+                    <Routes>
+                            <Route 
+                                path="/"
+                                element={<AllBooksPage />}
+                            />
+                            <Route 
+                                path="/:id"
+                                element={<SingleBookPage />}
+                            />
+                    </Routes>
+                </div>
+            </BrowserRouter>
         </>
     );
 };
