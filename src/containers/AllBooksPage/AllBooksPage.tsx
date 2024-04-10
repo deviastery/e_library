@@ -17,12 +17,11 @@ const AllPostsPage: React.FC = () => {
     const [inputSearchValue, setInputSearchValue] = useState<string>('');
 
     const getResponse = (searchValue: string): void => {
-        // Производим поиск по введенному названию книги
+
         const filteredBooks = data.filter((book: IBook) =>
             book.title.toLowerCase().includes(searchValue.toLowerCase())
         );
     
-        // Устанавливаем найденные книги в состояние books
         setBooks(filteredBooks);
     };
 
@@ -41,7 +40,7 @@ const AllPostsPage: React.FC = () => {
     }
     
     useEffect(() => {
-        debouncedGetResponse(inputSearchValue);  // Вызываем debouncedGetResponse при каждом изменении inputSearchValue
+        debouncedGetResponse(inputSearchValue);
     }, [inputSearchValue]);
 
     return (
